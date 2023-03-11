@@ -85,9 +85,6 @@ h4{
 dt {
     font-size: 175%;
     font-family: monospace;
-    /* text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-underline-offset: 5px; */
     background-size: 100% 15%;
     background-repeat: repeat-x;
     background-position: left 0% bottom 5%;
@@ -120,7 +117,7 @@ a:visited {
 footer{
     border-top: 2px solid black;
     margin: 3% 0 2% 0;
-    padding: 2%;
+    padding: 2%;display: table
     display: block;
     line-height: 1;
 }
