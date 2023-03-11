@@ -1,0 +1,309 @@
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: rgb(215, 237, 250);
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+a.skip{
+    position: absolute;
+    left: -400px;
+    top: -200px;
+}
+
+header{
+    margin: 2%;
+}
+
+@keyframes float {
+    0% {
+      text-shadow: 3px 3px 5px rgba(147,112,219,.2);
+      transform: translatey(0%);
+    }
+    25% {
+        text-shadow: 3px 3px 5px rgba(147,112,219,.6);
+        transform: translatey(5px);
+    }
+    50% {
+      text-shadow: 3px 13px 5px rgba(147,112,219,0.7);
+      transform: translatey(0%);
+    }
+    75% {
+        text-shadow: 3px 13px 5px rgba(147,112,219,0.7);
+        transform: translatey(-5px);
+      }
+    100% {
+      text-shadow: 3px 3px 5px rgba(147,112,219, .2);
+      transform: translatey(0px);
+    }
+  }
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 300%;
+    font-weight: bold;
+    color: black;
+    padding: 5%;
+    text-align: center;
+    line-height: 1;
+    text-shadow: 3px 3px 5px rgba(147,112,219,0);
+    transform: translatey(0px);
+    animation: float 6s linear infinite;
+    animation-fill-mode: none
+}
+
+@media (prefers-reduced-motion){
+    h1{
+        text-shadow: 3px 3px 5px rgba(147,112,219,0.6);
+        animation: none;
+    }
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 150%;
+}
+
+h3{
+    font-size: 125%;
+    font-style: italic;
+}
+
+h3.subtitle{
+    text-align: center;
+}
+
+h4{
+    font-size: 100;
+    font-weight: bold;
+}
+
+dt {
+    font-size: 175%;
+    font-family: monospace;
+    /* text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 5px; */
+    background-size: 100% 15%;
+    background-repeat: repeat-x;
+    background-position: left 0% bottom 5%;
+    background-image: repeating-linear-gradient(135deg, rgb(180, 96, 226) 0px, rgb(180, 96, 226) 45px,rgb(196, 124, 232) 45px, rgb(196, 124, 232) 76px,rgb(165, 69, 221) 76px, rgb(165, 69, 221) 114px,rgb(211, 151, 237) 114px, rgb(211, 151, 237) 127px,rgb(242, 206, 248) 127px, rgb(242, 206, 248) 139px,rgb(227, 179, 243) 139px, rgb(227, 179, 243) 170px);
+}
+
+dl.dictionary dd{
+    padding-top: 3%;
+}
+
+
+figcaption{
+    text-align: center;
+    font-style: italic;
+    padding: 1%;
+    background: black;
+    color: white;
+    opacity: 50%;
+}
+
+
+a:link{
+    color:blue;
+}
+
+a:visited {
+    color:rgb(70, 32, 70);
+}
+
+footer{
+    border-top: 2px solid black;
+    margin: 3% 0 2% 0;
+    padding: 2%;
+    display: block;
+    line-height: 1;
+}
+
+footer > div{
+    display: inline;
+}
+footer>p, footer>a{
+    margin: 0;
+    padding: 3%;
+    text-align: center;
+    display: block;
+    font-style: italic;
+}
+
+nav{
+    margin: 3%;
+    text-align: center;
+}
+
+nav a{
+    font-size: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: fit-content;
+}
+nav ul li{
+    padding: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-basis: content;
+
+}
+
+nav a:link {
+    color: black;
+    background-color: white;
+    padding: 3%;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+
+nav a:active{
+    color: black;
+    padding: 3%;
+    text-decoration: none;
+    border: 1px black rgb(70, 32, 70);
+}
+
+nav a:visited {
+    color: black;
+}
+
+
+nav a:hover{
+    color: white;
+    background-color: rgb(70, 32, 70);
+    padding: 3%;
+}
+
+nav a.current{
+    border: 1px solid black;
+    box-shadow:2px 2px 1px rgb(70, 32, 70);
+
+}
+
+
+a.skip{
+    padding: 5px;
+}
+
+
+main div:nth-child(odd) img{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 20%;
+    border: 5px dotted rgb(70, 32, 70);
+    border-radius: 100%;
+}
+
+main div:nth-child(even) img{
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 20%;
+    border: 5px dashed rgb(70, 32, 70);
+    border-radius: 100%;
+}
+main img.important{
+display: none;
+}
+
+main img{
+    min-width: 200px;
+}
+
+p{
+    margin: 3% 0px 3% 0px
+}
+
+main.main_grid{
+    display:grid;
+}
+
+main.main_grid+div{
+    grid-column-start: 1;
+}
+
+div.about_grid{
+    display:grid;
+    column-gap: 3%;
+    background-image: url("../images/daisies.jpg");
+    border-radius: 7%;
+}
+
+div.about_grid figure{
+  display: none
+}
+
+
+div.about_grid #lit{
+    grid-column-start: 1;
+}
+
+div.about_grid #history{
+    grid-column-start: 1;
+}
+
+div.about_grid #dict{
+    grid-column-start: 1;
+}
+
+div.about_grid div{
+    margin: 4%;
+    padding: 5%;
+    text-align: center;
+    background-color: rgb(240, 248, 255, .8);
+    border-radius: 3%;
+}
+
+
+/* main.grid_people{
+    display: grid;
+}
+main.grid_people div{
+    grid-column-start: 1 span 2;
+}
+
+main.grid_people img{
+    grid-column-start: 3 span 1;
+} */
+
+
+/*code for the larger viewports*/
+
+/* div.about_grid .about_pic{
+    min-width: 100%;
+    border: none;
+    background: none;
+    border-radius: 0%;
+    padding: 0%;
+    margin: 0%;
+} */
+
+/* div.about_grid #history_pic{
+    grid-column-start: 2;
+} */
+
+/* main img.important{
+    display: block;
+    margin: auto;
+    padding: 2%;
+    width: 90%;
+    border: 5px solid white;
+    border-radius: 0%;
+} */
+
+
